@@ -24,6 +24,7 @@ body {
 
 h1 {
     font-size: 4em;
+    padding-top: 100px;
 }
 
 h2 {
@@ -37,11 +38,16 @@ h2 {
 }
 
 .production-list .list-group-item {
-    background-color: black;
     color: white;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .modal-content {
-    background: black;
+    background: linear-gradient(to left, rgb(0, 0, 46),black, rgb(32, 18, 0));
     color: white;
+}
+
+.card {
+    background: linear-gradient(to left, rgba(0, 0, 255, 0.178),black, rgba(158, 90, 0, 0.24));
+    border: 0;
 }
