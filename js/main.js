@@ -1,9 +1,13 @@
 const aboutBtn = $("#aboutButton");
-const about = $("#about");
 const resumeBtn = $("#resumeButton");
+const contactBtn = $("#contactButton");
+
+const about = $("#about");
 const resume = $("#resume");
+
 const aboutModal = $("#aboutModal");
-const resumeModal = $("#resumeModal")
+const resumeModal = $("#resumeModal");
+const contactModal = $("#contactModal");
 
 // NAVBAR BUTTON TOGGLES
 
@@ -59,5 +63,18 @@ $(function() {
     $("#modalResumeClose").click(function() {
         resumeModal.hide("fade");
         resumeBtn.removeClass("active");
+    })
+})
+
+$(function() {
+    contactBtn.click(function() {
+        contactModal.show("fade");
+    })
+})
+
+$(function() {
+    $("#modalContactClose").click(function() {
+        contactModal.hide("fade");
+        contactBtn.removeClass("active");
     })
 })
