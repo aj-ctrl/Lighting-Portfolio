@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- HEAD -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lighting</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+  <!-- style sheet -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5ddc1ceff4.js" crossorigin="anonymous"></script>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<!-- BODY -->
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top" id="navbar">
+    <div class="container-fluid">
+      <!-- navbar logo -->
+      <a class="navbar-brand" href="index.html">Logo/portfolio</a>
+
+      <!-- Navbar toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar content -->
+      <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" type="button" id="aboutButton">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" type="button" id="resumeButton">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" type="button" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- about and resume modals -->
+  <div class="modal modal-lg" tabindex="-1" id="aboutModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">About</h5>
+          <button type="button" class="btn-close btn-close-white" id="modalAboutClose"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg">
+                <img src="pics/test_about_pic.jpg" class="img-fluid rounded" alt="About Me headshot">
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        About Me
+                    </h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus iaculis, ex a pulvinar pulvinar, mi eros condimentum nulla, vitae interdum
+                        nisi ligula dictum nibh.
+                        Mauris pulvinar lorem eu nulla sodales tristique a a diam.
+                        Etiam eget placerat justo, ac hendrerit ex. Maecenas eget elit magna.
+                        Mauris viverra risus sit amet mattis interdum. Nam id arcu id massa ornare vulputate
+                        vel at lorem.
+                        Nullam ut euismod mi. Curabitur et tempus neque, vel consectetur lectus.
+                        Vivamus elementum dui turpis, id tempus elit fermentum vitae.
+                        Cras rutrum ante ut magna commodo, a convallis tellus aliquam.
+                        Duis rutrum tempus nisi vitae malesuada.
+                        Fusce pretium molestie orci a vestibulum.
+                        Nulla sollicitudin leo vel vehicula vehicula.
+                        Donec velit erat, fringilla sed urna iaculis, dictum congue ante.
+                        Cras eleifend, nulla porta imperdiet laoreet, velit eros semper ex, in tincidunt
+                        purus dui gravida nibh.
+                        Fusce et sapien dui. Maecenas eu velit eleifend, posuere enim quis, ullamcorper
+                        nunc.
+                        Fusce non velit eu libero pulvinar euismod at eget tellus. Quisque sed tincidunt
+                        augue.
+                        In ut aliquet purus. Quisque iaculis aliquet arcu ac porta.
+                    </p>
+                    <p class="card-text text-secondary">Twitter Facebook YT Insta</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" id="resumeModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Resume</h5>
+          <button type="button" class="btn-close btn-close-white" id="modalResumeClose"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="card-text list-group production-list text-center">
+            <div class="list-group-item">
+                <h5 class="mb-1">Production Title</h5>
+                <p>Role in production</p>
+            </div>
+            <div class="list-group-item">
+                <h5 class="mb-1">Production Title</h5>
+                <p>Role in production</p>
+            </div>
+            <div class="list-group-item">
+                <h5 class="mb-1">Production Title</h5>
+                <p>Role in production</p>
+            </div>
+            <div class="list-group-item">
+                <h5 class="mb-1">Production Title</h5>
+                <p>Role in production</p>
+            </div>
+            <div class="list-group-item">
+                <h5 class="mb-1">Production Title</h5>
+                <p>Role in production</p>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- GALLERY -->
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="pics\horiz\1.jpg"
+        class="w-100 rounded mb-4"
+        alt="horizontal gallery image"
+      />
+
+      <img
+        src="pics\vert\4.jpg"
+        class="w-100 rounded mb-4"
+        alt="vertical gallery image"
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="pics\vert\1.jpg"
+        class="w-100 rounded mb-4"
+        alt="vertical gallery image"
+      />
+
+      <img
+        src="pics\horiz\3.jpg"
+        class="w-100 rounded mb-4"
+        alt="horizontal gallery image"
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="pics\horiz\2.jpg"
+        class="w-100 rounded mb-4"
+        alt="horizontal gallery image"
+      />
+
+      <img
+        src="pics\vert\3.jpg"
+        class="w-100 rounded mb-4"
+        alt="vertical gallery image"
+      />
+    </div>
+  </div>
+
+  </div>
+
+  <footer>
+  <div class="container-fluid fixed-bottom text-center footer">
+    <div class="row">
+      <div class="col">
+        <a class="mx-1" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a class="mx-1" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a class="mx-1" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a class="mx-1" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+  <!-- jQuery, Popper.js, and Bootstrap JavaScript plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- personal js -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+  
+</html>
